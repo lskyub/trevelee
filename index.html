@@ -47,12 +47,47 @@
             border-radius: 30px;
             font-weight: bold;
             transition: background-color 0.3s;
+            margin-bottom: 2rem;
         }
 
         .cta-button:hover {
             background-color: #FF5252;
         }
 
+        .store-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .store-link {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .store-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .store-link img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+
+        .store-link.disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
         .features {
             padding: 5rem 2rem;
             background-color: #f9f9f9;
@@ -94,6 +129,10 @@
             .header-content p {
                 font-size: 1.2rem;
             }
+
+            .store-buttons {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -102,7 +141,17 @@
         <div class="header-content">
             <h1>Travelee</h1>
             <p>당신의 특별한 여행을 더욱 특별하게</p>
-<!--             <a href="#" class="cta-button">지금 시작하기</a> -->
+            <a href="#" class="cta-button">지금 시작하기</a>
+            <div class="store-buttons">
+                <a href="https://apps.apple.com/kr/app/%ED%8A%B8%EB%9E%98%EB%B8%94%EB%A6%AC/id6746734501" class="store-link" target="_blank">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+PHBhdGggZD0iTTE4LjcxIDI0TDEyIDIwLjQ1IDUuMjkgMjRsMS4yNy03LjM5TDEgMTEuMjFsNy40MS0xLjA3TDEyIDNoMy41OWwzLjU5IDcuMTQgNy40MSAxLjA3LTUuNTUgNS40eiIvPjwvc3ZnPg==" alt="iOS">
+                    iOS 앱스토어
+                </a>
+                <span class="store-link disabled">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+PHBhdGggZD0iTTcuNzEgMy41MkwxLjE1IDEwbDYuNTYgNi40OCAyLjY1LTIuNjFMMy43IDEwbDYuNjEtMy44OS0yLjYtMi41OXpNMTYuMjkgMy41MmwyLjYgMi41OUwxMi4zIDEwbDYuNjEgMy44OS0yLjY1IDIuNjFMMjIuODUgMTBsLTYuNTYtNi40OHoiLz48L3N2Zz4=" alt="Android">
+                    출시 예정
+                </span>
+            </div>
         </div>
     </header>
 
